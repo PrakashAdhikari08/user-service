@@ -3,8 +3,7 @@
 clone the project using the https/ssh.
 
 FOR ssh run the command below in terminal:
-#git clone git@github.com:PrakashAdhikari08/user-service.git
---
+**#git clone git@github.com:PrakashAdhikari08/user-service.git**
 
 once clone, build and get all the dependencies.
 Java version used is 11.
