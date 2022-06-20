@@ -15,7 +15,8 @@ Also, this profile can be setup in resources in src/main/java/resources applicat
 
 for docker, set active profiles to docker.
 and stay on root directory and run:
-** #docker compose up -d **
+
+**** #docker compose up -d ****
  
 
 **URL for swagger: http://localhost/swagger-ui/index.html**
