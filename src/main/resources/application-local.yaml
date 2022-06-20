@@ -18,3 +18,11 @@ spring:
     console:
       enabled: true
       path: /local-db/h2 #path for access to db: localhost/local-db/h2
+
+
+#Swagger UI integration
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    disable-swagger-default-url: true

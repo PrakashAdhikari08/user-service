@@ -16,4 +16,7 @@ for docker, set active profiles to docker.
 and stay on root directory and run:
  #docker compose up -d 
  -- 
+
+URL for swagger: http://localhost/swagger-ui/index.html
+--
  
