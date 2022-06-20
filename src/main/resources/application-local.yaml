@@ -1,0 +1,20 @@
+server:
+  port: 80 #using the default port for browser
+spring:
+  datasource:
+    url: jdbc:h2:mem:userservice
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /local-db/h2 #path for access to db: localhost/local-db/h2
