@@ -16,8 +16,10 @@ public class UserMapper {
     }
 
     public static UserDto toDto (User user) {
+
+
         return UserDto.builder()
-//                .userId(user.getUserId())
+                .userId(user.getUserId() != null ? user.getUserId(): null)
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
                 .email(user.getEmail())

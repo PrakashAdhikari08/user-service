@@ -13,11 +13,12 @@ import javax.validation.constraints.Past;
 import java.time.LocalDate;
 import java.util.Date;
 
-@Entity
+@Entity(name = "user_tbl")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class User {
 
     @Id

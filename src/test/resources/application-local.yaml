@@ -1,0 +1,29 @@
+#spring:
+#  datasource:
+#    username: root
+#    password: root
+#    url: jdbc:tc:mysql://localhost:3306/truckee
+#    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        format_sql: true
+
+#using the default port for browser
+spring:
+  datasource:
+    url: jdbc:h2:mem:userservice
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true

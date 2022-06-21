@@ -17,7 +17,20 @@ for docker, set active profiles to docker.
 and stay on root directory and run:
 
 **** #docker compose up -d ****
+(this will bring up the mysql database that the application connects with on DOCKER profile)
+
+Once the mysql docker is up and running, you can check it with the following command:
+>>docker ps
+
+Run the application by running the main class.
+
  
 
 **URL for swagger: http://localhost/swagger-ui/index.html**
+
+
+The test cases are wi written with the H2 database. So, in order to have this running on local config for application,
+the profile for test is set to local.
+
+
  
