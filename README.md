@@ -10,10 +10,12 @@ once clone, build and get all the dependencies.
 
 
 For local this can be run using docker and also locally with maven:
+--
 for local set active profiles to local in intelliJ
 Also, this profile can be setup in resources in src/main/java/resources application.properties file. its value should be either **** docker/local****
 
 for docker, set active profiles to docker.
+--
 and stay on root directory and run:
 
 **** #docker compose up -d ****
