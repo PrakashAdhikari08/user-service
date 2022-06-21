@@ -37,10 +37,10 @@ jobs:
       - name: Upload jar to Artifactory
         uses: actions/upload-artifact@v3
         with:
-          name: user-service-$ {{ github.sha }}
+          name: user-service-${{ github.sha }}
           path: ./target/*.jar
 
       - name: Build Docker Image (Push to Container Registry not done)
         run: |
-          docker build -t user-service-$ {{ github-sha}}
+          docker build -t user-service-${{ github-sha}} .
 
