@@ -1,16 +1,45 @@
 version: '3.8'
 services:
-  db:
+  mysqldb:
     image: mysql:8.0
     command: --default-authentication-plugin=mysql_native_password
-#    restart: always
+    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=userservicepass
+    expose:
+      - "3306"
     ports:
       - 3307:3306
     volumes:
       - db:/var/lib/mysql
 #      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+    networks:
+      - db-mysql
+
+#  ms:
+#    restart: on-failure
+#    build:
+#      context: ./
+#      dockerfile: Dockerfile
+#    environment:
+##      - spring.datasource.url=jdbc:mysql://mysqldb:3306/employeedb?useSSL=false&createDatabaseIfNotExist=true
+##      - spring.datasource.password=userservicepass
+##      - spring.datasource.user=root
+#      - spring.profiles.active=local
+#      - server.port=8080
+#
+#    ports:
+#    - 8080:8080
+#    networks:
+#      - db-mysql
+#
+#    depends_on:
+#      - db
+
 volumes:
   db:
     driver: local
+
+networks:
+  db-mysql:
