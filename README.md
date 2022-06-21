@@ -31,7 +31,7 @@ Run the application by running the main class.
 **URL for swagger: http://localhost/swagger-ui/index.html**
 
 
-The test cases are wi written with the H2 database. So, in order to have this running on local config for application,
+The test cases are with written with the H2 database. So, in order to have this running on local config for application,
 the profile for test is set to local.
 
 
