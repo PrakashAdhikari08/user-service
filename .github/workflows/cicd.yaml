@@ -40,3 +40,7 @@ jobs:
           name: user-service-$ {{ github.sha }}
           path: ./target/*.jar
 
+      - name: Build Docker Image (Push to Container Registry not done)
+        run: |
+          docker build -t user-service-$ {{ github-sha}}
+
