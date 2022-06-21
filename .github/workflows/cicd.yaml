@@ -1,15 +1,15 @@
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
-name: user-service CI/CD pipeline
+name: user-service CI pipeline
 
 jobs:
 
   tests:
     runs-on: ubuntu-latest
-    environment: production
+    environment: Dev
 
     steps:
       - uses: actions/checkout@v2
