@@ -26,6 +26,7 @@ Once the mysql docker is up and running, you can check it with the following com
 
 Run the application by running the main class.
 
+
  
 
 **URL for swagger: http://localhost/swagger-ui/index.html**
