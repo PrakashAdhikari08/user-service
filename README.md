@@ -14,17 +14,19 @@ For local this can be run using docker and also locally with maven:
 for local set active profiles to local in intelliJ
 Also, this profile can be setup in resources in src/main/java/resources application.properties file. its value should be either **** docker/local****
 
-for docker, set active profiles to docker.
+for docker, set active profiles to docker. 
 --
+(this is already done in src/main/java/resources-> application.properties)
 and stay on root directory and run:
 
 **** #docker compose up -d ****
 (this will bring up the mysql database that the application connects with on DOCKER profile)
 
 Once the mysql docker is up and running, you can check it with the following command:
->>docker ps
+>>docker ps 
+>>a docker container with name **db** should be up and running.
 
-Run the application by running the main class.
+Run the application by running the main class (inside src/main/java) or run command from terminal on root directory as **** mvn run****. 
 
 
  
