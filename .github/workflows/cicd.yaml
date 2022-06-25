@@ -14,8 +14,10 @@ jobs:
     steps:
 
 
-#      - name: Run Script file
-#        run: ./github/env.sh
+      - name: Run Script file
+        run: |
+           chmod +x ./github/env.sh
+           ./github/env.sh
 
       - uses: actions/checkout@v2
       - name: Set up JDK 11
