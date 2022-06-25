@@ -16,8 +16,8 @@ jobs:
 
       - name: Run Script file
         run: |
-           chmod +x ./github/env.sh
-           ./github/env.sh
+           cd src/main/resources
+           echo spring.profiles.active=local >> application.properties
 
       - uses: actions/checkout@v2
       - name: Set up JDK 11
