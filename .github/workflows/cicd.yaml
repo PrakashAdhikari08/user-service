@@ -1,14 +1,13 @@
 
 on:
   push:
-    branches: [master]
+    branches: [master, *]
 
 name: user-service CI pipeline
 
 jobs:
 
   tests:
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     environment: Dev
 
@@ -31,6 +30,7 @@ jobs:
 
   package:
     needs: tests
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev'
     runs-on: ubuntu-latest
     steps:
 
